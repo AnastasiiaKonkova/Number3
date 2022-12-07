@@ -1,5 +1,6 @@
 ﻿// Задача 19. Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
 
+/* 
 void palindrom (int num)
 {
     int PerNum = 0;
@@ -22,6 +23,34 @@ void palindrom (int num)
 Console.Write("Введите число: ");
 int newnum = Convert.ToInt32(Console.ReadLine());
 palindrom(newnum);
+*/
 
 // Задача 21. Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
+
+double Distance(double xA, double yA, double zA,double xB, double yB, double zB)
+{
+    double length = Math.Sqrt(Math.Pow(xB - xA, 2) + Math.Pow(yB - yA, 2)+ Math.Pow(zB - zA, 2));
+    return Math.Round(length, 2);
+}
+Console.Write("Введите х - координаты точки А: ");
+double xA = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Введите у - координаты точки А: ");
+double yA = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Введите z - координаты точки А: ");
+double zA = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Введите х - координаты точки B: ");
+double xB = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Введите y - координаты точки B: ");
+double yB = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Введите z - координаты точки B: ");
+double zB = Convert.ToDouble(Console.ReadLine());
+
+double distanceBetweenAB = Distance(xA, yA,zA, xB, yB, zB);
+Console.WriteLine($"Расстояние между точками в 3D пространстве составляет {distanceBetweenAB}.");
+
 // Задача 23. Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
