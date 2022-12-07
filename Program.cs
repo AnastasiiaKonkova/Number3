@@ -27,10 +27,11 @@ palindrom(newnum);
 
 // Задача 21. Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
 
+/*
 double Distance(double xA, double yA, double zA,double xB, double yB, double zB)
 {
     double length = Math.Sqrt(Math.Pow(xB - xA, 2) + Math.Pow(yB - yA, 2)+ Math.Pow(zB - zA, 2));
-    return Math.Round(length, 2);
+    return length;
 }
 Console.Write("Введите х - координаты точки А: ");
 double xA = Convert.ToDouble(Console.ReadLine());
@@ -52,5 +53,22 @@ double zB = Convert.ToDouble(Console.ReadLine());
 
 double distanceBetweenAB = Distance(xA, yA,zA, xB, yB, zB);
 Console.WriteLine($"Расстояние между точками в 3D пространстве составляет {distanceBetweenAB}.");
+*/
 
 // Задача 23. Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+
+/* void kyb ( int num)
+{
+    int temp = 1;
+    while (temp <= num)
+    {
+    Console.Write(Math.Pow(temp,3) + " ");
+    temp ++;
+    }
+}
+
+Console.Write("Введите число: ");
+int newnum = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Кубы от 1 до "+ newnum + ": ");
+kyb (newnum);
+*/
